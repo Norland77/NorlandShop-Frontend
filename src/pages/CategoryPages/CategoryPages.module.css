@@ -1,0 +1,40 @@
+.body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    gap: 10px 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.btn {
+    margin: 30px;
+    width: 33.333%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+    font-family: Montserrat sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.btn:hover {
+    background: rgb(201, 201, 201);
+    transition-duration: 0.3s;
+}
+
+.btn:disabled {
+    background: rgb(76, 76, 76);
+    transition-duration: 0.3s;
+    cursor: default;
+}
+
+.btn:active {
+    background: rgb(165, 165, 165);
+    transition-duration: 0.3s;
+}

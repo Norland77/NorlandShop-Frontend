@@ -1,0 +1,70 @@
+.body {
+    margin-top: 50px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.footerBody{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.formInner{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+.formInput{
+    padding: 10px 20px 10px 10px;
+    border: none;
+    background: rgb(221, 221, 221);
+}
+.formBtn{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: Inter sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 12px;
+    padding: 10px 20px 10px 10px;
+    cursor: pointer;
+}
+.priceBlock{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.priceTitle{
+    color: rgb(0, 0, 0);
+    font-family: Montserrat sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 15px;
+}
+.priceTotal{
+    color: rgb(0, 0, 0);
+    font-family: Montserrat sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 15px;
+}
+
+.orderBtnBlock{
+    margin-top: 40px;
+}
+.orderBtn{
+    width: 55%;
+    padding: 25px 30px;
+    float: left;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: Inter sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 29px;
+    cursor: pointer;
+}

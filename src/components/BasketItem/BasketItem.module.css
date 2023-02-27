@@ -1,0 +1,54 @@
+.body{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 150px;
+    border-bottom: 1px solid rgb(132, 132, 132);
+    border-top: 1px solid rgb(132, 132, 132);
+}
+.leftSide{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.rightSide{
+    width: 20%;
+}
+.counterBBlock{
+    width: 17%;
+}
+.nameBlock {
+    width: 30%;
+}
+.img{
+    width: 15%;
+}
+.name{
+    color: rgb(0, 0, 0);
+    font-family: Montserrat sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 15px;
+}
+.btnImg{
+    width: 100%;
+}
+.btn{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition-duration: .3s;
+}
+.btn:hover {
+    background-color: #959595;
+    transition-duration: .3s;
+}
+.price{
+    color: rgb(0, 0, 0);
+    font-family: Montserrat sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 15px;
+}

@@ -1,0 +1,27 @@
+.main {
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.basket_btn {
+    background: none;
+    border: none;
+    width: 84px;
+    cursor: pointer;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 100%;
+}
