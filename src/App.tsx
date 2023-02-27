@@ -8,6 +8,8 @@ import {store} from "./store";
 import PageNotFound from "./pages/PageNotFound/PageNotFound";
 import BasketPage from "./pages/BasketPage/BasketPage";
 
+
+
 const App = () => {
   return (
           <Provider store={store}>

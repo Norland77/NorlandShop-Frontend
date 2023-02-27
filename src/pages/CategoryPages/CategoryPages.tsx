@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import styles from './CategoryPages.module.css';
-import {Card} from "../../components/Card/Card";
-
+import {Card} from "../../components/Card/Card"
 interface requestType {
     price : string | null,
     name : string,

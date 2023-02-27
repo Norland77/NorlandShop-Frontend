@@ -27,8 +27,8 @@
     transform: scale(0.5);
     transition-duration: 0.5s;
     display: flex;
-    width: 25%;
-    gap: 20px;
+    width: 80%;
+    gap: 5px;
 }
 
 .modal__content.activeMod {
@@ -40,7 +40,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 60%;
     background: rgb(255, 255, 255);
     border: 2px solid rgb(0, 0, 0);
     border-radius: 20px;
@@ -73,7 +73,7 @@
 }
 
 .rightBlock {
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     gap: 45px;
@@ -85,10 +85,10 @@
     border-radius: 10px;
     color: rgb(0, 0, 0);
     font-family: 'Comfortaa', sans-serif;
-    font-size: 26px;
+    font-size: 16px;
+    padding: 10px;
     font-weight: 600;
     line-height: 32px;
-    padding: 20px;
     cursor: pointer;
     transition-duration: .3s;
 }

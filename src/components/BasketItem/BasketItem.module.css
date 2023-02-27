@@ -1,13 +1,15 @@
 .body{
     display: flex;
+    flex-direction: column;
+    gap: 20px;
     text-align: center;
     align-items: center;
-    gap: 150px;
     border-bottom: 1px solid rgb(132, 132, 132);
     border-top: 1px solid rgb(132, 132, 132);
 }
 .leftSide{
     display: flex;
+    flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: space-between;
@@ -16,13 +18,13 @@
     width: 20%;
 }
 .counterBBlock{
-    width: 17%;
+    width: 50%;
 }
 .nameBlock {
-    width: 30%;
+    width: 90%;
 }
 .img{
-    width: 15%;
+    width: 40%;
 }
 .name{
     color: rgb(0, 0, 0);
@@ -40,6 +42,10 @@
     height: 40px;
     cursor: pointer;
     transition-duration: .3s;
+}
+.btnBlock {
+    display: flex;
+    gap: 5px;
 }
 .btn:hover {
     background-color: #959595;

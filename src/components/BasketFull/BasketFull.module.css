@@ -4,8 +4,10 @@
 .header{
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 }
 .footerBody{
+    flex-direction: column;
     margin-top: 25px;
     display: flex;
     justify-content: space-between;
@@ -57,8 +59,8 @@
     margin-top: 40px;
 }
 .orderBtn{
-    width: 55%;
-    padding: 25px 30px;
+    width: 100%;
+    padding: 10px 20px;
     float: left;
     background: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
@@ -67,6 +69,9 @@
     font-weight: 500;
     line-height: 29px;
     cursor: pointer;
+}
+.priceTxt {
+    display: none;
 }
 
 @media (max-width: 320px) {

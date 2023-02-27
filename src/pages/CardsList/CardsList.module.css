@@ -1,6 +1,6 @@
 .body {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
     gap: 10px 20px;
     margin-top: 30px;
@@ -8,8 +8,8 @@
 }
 
 .btn {
-    margin: 30px;
-    width: 33.333%;
+    margin: 10px;
+    width: 50%;
     height: 100%;
     background: rgb(255, 255, 255);
     border: 2px solid rgb(0, 0, 0);
@@ -21,6 +21,9 @@
     line-height: 44px;
     cursor: pointer;
     transition-duration: 0.3s;
+}
+.btnBlock {
+    display: flex;
 }
 
 .active {
@@ -37,6 +40,7 @@
     transition-duration: 0.3s;
     cursor: default;
 }
+
 
 .btn:active {
     background: rgb(165, 165, 165);
