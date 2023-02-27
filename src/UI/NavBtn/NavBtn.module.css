@@ -27,3 +27,10 @@
 .link:active {
     background-color: #A5A5A5;
 }
+
+@media (max-width: 320px) {
+    .link {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+}

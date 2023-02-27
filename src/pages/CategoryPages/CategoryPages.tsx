@@ -112,8 +112,10 @@ const CategoryPages = (props: propsTypes) => {
             <div className={styles.body}>
                 {listItems}
             </div>
-            <button disabled={isDisablePrev} onClick={() => prevCards(indexCard)} className={styles.btn}>Назад</button>
-            <button disabled={isDisableNext} onClick={() => nextCards(indexCard + 8)} className={styles.btn}>Вперед</button>
+            <div className={styles.btnBlock}>
+                <button disabled={isDisablePrev} onClick={() => prevCards(indexCard)} className={styles.btn}>Назад</button>
+                <button disabled={isDisableNext} onClick={() => nextCards(indexCard + 8)} className={styles.btn}>Вперед</button>
+            </div>
         </div>
     );
 };

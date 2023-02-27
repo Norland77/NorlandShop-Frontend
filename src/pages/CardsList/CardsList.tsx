@@ -94,12 +94,14 @@ const CardsList = ({funcSetActive}: any) => {
         <Card  price={item.price} name={item.name} vendorCode={item.vendorCode} pictures={item.pictures} isActive={false}></Card>
     );
     return (
-        <div>
+        <div className={styles.main}>
             <div className={styles.body}>
                 {listItems}
             </div>
-            <button disabled={isDisablePrev} onClick={() => prevCards(indexCard)} className={styles.btn}>Назад</button>
-            <button disabled={isDisableNext} onClick={() => nextCards(indexCard + 8)} className={styles.btn}>Вперед</button>
+            <div className={styles.btnBlock}>
+                <button disabled={isDisablePrev} onClick={() => prevCards(indexCard)} className={styles.btn}>Назад</button>
+                <button disabled={isDisableNext} onClick={() => nextCards(indexCard + 8)} className={styles.btn}>Вперед</button>
+            </div>
         </div>
     );
 };

@@ -1,5 +1,6 @@
 .main {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     padding-top: 20px;
     text-align: center;
@@ -9,7 +10,7 @@
 .basket_btn {
     background: none;
     border: none;
-    width: 84px;
+    width: 10em;
     cursor: pointer;
 }
 
@@ -23,5 +24,20 @@
 }
 
 .logo {
-    width: 100%;
+    width: 10%;
+}
+
+@media (max-width: 320px) {
+    .logo {
+        width: 20%;
+    }
+    .main {
+        gap: 5px;
+    }
+    .basket_btn {
+        width: 5em;
+    }
+    .body {
+        padding: 10px;
+    }
 }

@@ -99,5 +99,22 @@
     transition-duration: .3s;
 }
 
+@media (max-width: 320px) {
+    .modal__content {
+        width: 80%;
+        gap: 5px;
+    }
+    .leftBlock {
+        width: 60%;
+    }
+    .rightBlock {
+        width: 40%;
+    }
+    .orderBtn {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
 
 

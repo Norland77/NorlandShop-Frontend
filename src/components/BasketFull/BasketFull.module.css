@@ -68,3 +68,19 @@
     line-height: 29px;
     cursor: pointer;
 }
+
+@media (max-width: 320px) {
+    .header {
+        flex-direction: column;
+    }
+    .priceTxt {
+        display: none;
+    }
+    .footerBody {
+        flex-direction: column;
+    }
+    .orderBtn {
+        width: 100%;
+        padding: 10px 20px;
+    }
+}

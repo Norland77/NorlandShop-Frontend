@@ -38,3 +38,19 @@
     background: rgb(165, 165, 165);
     transition-duration: 0.3s;
 }
+
+@media (max-width: 320px) {
+    .body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .btnBlock {
+        display: flex;
+    }
+
+    .btn {
+        margin: 10px;
+        width: 50%;
+    }
+}

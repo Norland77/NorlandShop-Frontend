@@ -52,3 +52,26 @@
     font-weight: 300;
     line-height: 15px;
 }
+
+@media (max-width: 320px) {
+    .body {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .leftSide {
+        flex-direction: column;
+    }
+    .img {
+        width: 40%;
+    }
+    .nameBlock {
+        width: 90%;
+    }
+    .counterBBlock {
+        width: 50%;
+    }
+    .btnBlock {
+        display: flex;
+        gap: 5px;
+    }
+}

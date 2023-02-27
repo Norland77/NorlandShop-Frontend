@@ -29,8 +29,10 @@ const BasketItem = ({ img, name, price, vendorCode }: Props) => {
                 <div className={styles.nameBlock}>
                     <h2 className={styles.name}>{name}</h2>
                 </div>
-                <button onClick={() => {deleteItem()}} className={styles.btn}><img className={styles.btnImg} src={basket} alt=""/></button>
-                <button className={styles.btn}><img className={styles.btnImg} src={like} alt=""/></button>
+                <div className={styles.btnBlock}>
+                    <button onClick={() => {deleteItem()}} className={styles.btn}><img className={styles.btnImg} src={basket} alt=""/></button>
+                    <button className={styles.btn}><img className={styles.btnImg} src={like} alt=""/></button>
+                </div>
                 <p className={styles.price}>{price} грн</p>
                 <div className={styles.counterBBlock}>
                     <Counter value={quantity} min={1} max={10} onChange={setQuantity} onBlur={() => updateQuantity(quantity)}/>

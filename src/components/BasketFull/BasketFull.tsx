@@ -14,7 +14,7 @@ const BasketFull = () => {
         <div className={styles.body}>
             <div className={styles.header}>
                 <h2>Кошик</h2>
-                <h2>Ціна</h2>
+                <h2 className={styles.priceTxt}>Ціна</h2>
             </div>
             <div>
                 {listItems}
