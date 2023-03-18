@@ -2,14 +2,16 @@ import React from 'react';
 import {useTypedSelector} from "../../hooks/useTypedSelector";
 import BasketItem from "../BasketItem/BasketItem";
 import styles from "./BasketFull.module.css"
+import {useTelegram} from "../../hooks/useTelegram";
 
 const BasketFull = () => {
     const {itemArr} = useTypedSelector(state => state.basket);
-
+    const {tg} = useTelegram();
     const listItems = itemArr.map((item) =>
         <BasketItem img={item.img} price={item.price} name={item.name} vendorCode={item.vendorCode}></BasketItem>
     );
     console.log(listItems);
+    tg.MainButton.show()
     return (
         <div className={styles.body}>
             <div className={styles.header}>
@@ -38,11 +40,6 @@ const BasketFull = () => {
                         <p className={styles.priceTotal}>1750 грн</p>
                     </div>
                 </div>
-            </div>
-            <div className={styles.orderBtnBlock}>
-                <form action="" method={"get"}>
-                    <input className={styles.orderBtn} type="submit" value={"Оформити замовлення"}/>
-                </form>
             </div>
         </div>
     );

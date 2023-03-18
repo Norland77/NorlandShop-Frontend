@@ -18,10 +18,6 @@ const BasketItem = ({ img, name, price, vendorCode }: Props) => {
     function deleteItem() {
         dispatch({type: "REMOVE_ITEM", payload: vendorCode});
     }
-    function updateQuantity(value: number) {
-        setQuantity(value);
-        dispatch({type: "UPDATE_QUANTITY", payload: {vendorCode, quantity: value}});
-    }
     return (
         <div className={styles.body}>
             <div className={styles.leftSide}>
@@ -35,7 +31,7 @@ const BasketItem = ({ img, name, price, vendorCode }: Props) => {
                 </div>
                 <p className={styles.price}>{price} грн</p>
                 <div className={styles.counterBBlock}>
-                    <Counter value={quantity} min={1} max={10} onChange={setQuantity} onBlur={() => updateQuantity(quantity)}/>
+                    <Counter value={quantity} min={1} max={10} onChange={setQuantity}/>
                 </div>
             </div>
             <div className={styles.rightSide}>

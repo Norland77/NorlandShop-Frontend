@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import styles from './CategoryPages.module.css';
 import {Card} from "../../components/Card/Card"
+import {useTelegram} from "../../hooks/useTelegram";
 interface requestType {
     price : string | null,
     name : string,
@@ -28,7 +29,8 @@ const CategoryPages = (props: propsTypes) => {
     const [maxIndexCards, setMaxIndexCards] = useState(0);
     const [isDisablePrev, setIsDisablePrev] = useState(true);
     const [isDisableNext, setIsDisableNext] = useState(false);
-
+    const {tg} = useTelegram();
+    tg.MainButton.hide();
     /*useEffect(() => {
         getOffer(indexCard);
     }, [])*/

@@ -16,6 +16,7 @@
 
 .body {
     display: flex;
+    position: sticky;
     flex-direction: column;
     text-align: center;
     align-items: center;
@@ -26,6 +27,18 @@
 
 .logo {
     width: 20%;
+}
+
+.userName {
+    color: black;
+    text-decoration: none;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    padding: 10px 12px;
+    font-weight: 600;
+    background-color: white;
+    border-radius: 5px;
+    border: solid 1px black;
 }
 
 @media (max-width: 320px) {

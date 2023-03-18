@@ -5,9 +5,11 @@ import logo from "../../img/Logo.svg"
 import basket from "../../img/basket.svg"
 import {Link, Outlet} from "react-router-dom";
 import Popup from "../Popup/Popup";
+import {useTelegram} from "../../hooks/useTelegram";
 
 
 const Header = () => {
+    const {user} = useTelegram();
     return (
         <div className={styles.body}>
             <div className={styles.main}>
@@ -22,6 +24,9 @@ const Header = () => {
                 <Link className={styles.basket_btn} to={"/basket"}>
                     <img src={basket} alt=""/>
                 </Link>
+                <div className={styles.userName}>
+                    {user.user.username}
+                </div>
             </div>
             <Outlet></Outlet>
             <Popup/>
