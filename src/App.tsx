@@ -7,11 +7,10 @@ import {Provider} from "react-redux";
 import {store} from "./store";
 import PageNotFound from "./pages/PageNotFound/PageNotFound";
 import BasketPage from "./pages/BasketPage/BasketPage";
-import {useTelegram} from "./hooks/useTelegram";
+
+
 
 const App = () => {
-    const {tg} = useTelegram()
-    tg.expand();
   return (
           <Provider store={store}>
               <Routes>

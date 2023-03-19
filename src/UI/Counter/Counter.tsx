@@ -6,10 +6,11 @@ type Props = {
     min?: number;
     max?: number;
     onChange?: (value: number) => void;
+    onBlur?: (value: number) => void;
 }
 
-const Counter = ({ value = 1, min = 1, max = 10, onChange}: Props) => {
-    const [counterValue, setCounterValue] = useState<number>(1);
+const Counter = ({ value = 1, min = 1, max = 10, onChange }: Props) => {
+    const [counterValue, setCounterValue] = useState<number>(0);
 
     const handleIncrement = () => {
         if (counterValue < max) {
