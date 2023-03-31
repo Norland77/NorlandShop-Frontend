@@ -25,7 +25,7 @@ const Header = () => {
                     <img src={basket} alt=""/>
                 </Link>
                 <div className={styles.userName}>
-                    {user.user.username}
+                    {user?.user?.username}
                 </div>
             </div>
             <Outlet></Outlet>

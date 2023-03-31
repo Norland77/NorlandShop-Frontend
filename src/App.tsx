@@ -7,6 +7,7 @@ import {Provider} from "react-redux";
 import {store} from "./store";
 import PageNotFound from "./pages/PageNotFound/PageNotFound";
 import BasketPage from "./pages/BasketPage/BasketPage";
+import RegistrationForm from "./pages/RegistrationForm/RegistrationForm";
 
 
 
@@ -22,6 +23,7 @@ const App = () => {
                       <Route path="/sets" element={<CategoryPages idCategory = {"86"}/>}/>
                       <Route path="/souvenir" element={<CategoryPages idCategory = {"71"}/>}/>
                       <Route path={"/basket"} element={<BasketPage />}/>
+                      <Route path="/registration" element={<RegistrationForm />}/>
                       <Route path="*" element={<PageNotFound />}/>
                   </Route>
               </Routes>
